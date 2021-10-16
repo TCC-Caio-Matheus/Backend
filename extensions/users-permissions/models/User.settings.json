@@ -62,6 +62,10 @@
     "stores": {
       "via": "user",
       "collection": "store"
+    },
+    "evaluations": {
+      "collection": "evaluation",
+      "via": "user"
     }
   }
 }

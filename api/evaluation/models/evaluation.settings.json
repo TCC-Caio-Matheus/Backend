@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "evaluations",
+  "info": {
+    "name": "evaluation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "suggestion": {
+      "model": "suggestion",
+      "via": "evaluations"
+    },
+    "user": {
+      "via": "evaluations",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

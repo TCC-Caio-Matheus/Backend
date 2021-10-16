@@ -17,9 +17,9 @@
       "required": true
     },
     "user": {
+      "via": "stores",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "stores"
+      "model": "user"
     },
     "quizzes": {
       "via": "stores",

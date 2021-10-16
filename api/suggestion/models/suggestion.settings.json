@@ -27,6 +27,10 @@
     "answers": {
       "via": "suggestions",
       "collection": "answer"
+    },
+    "evaluations": {
+      "via": "suggestion",
+      "collection": "evaluation"
     }
   }
 }
