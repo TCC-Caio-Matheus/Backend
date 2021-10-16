@@ -33,6 +33,10 @@
     "answers": {
       "via": "question",
       "collection": "answer"
+    },
+    "suggestions": {
+      "collection": "suggestion",
+      "via": "question"
     }
   }
 }

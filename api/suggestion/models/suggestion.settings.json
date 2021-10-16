@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "suggestions",
+  "info": {
+    "name": "suggestion"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "range_min": {
+      "type": "integer"
+    },
+    "range_max": {
+      "type": "integer"
+    },
+    "question": {
+      "via": "suggestions",
+      "model": "question"
+    },
+    "answers": {
+      "via": "suggestions",
+      "collection": "answer"
+    }
+  }
+}
