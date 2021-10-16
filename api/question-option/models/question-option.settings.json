@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "question_options",
+  "info": {
+    "name": "question_option"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "score": {
+      "type": "integer"
+    },
+    "question": {
+      "via": "question_options",
+      "model": "question"
+    }
+  }
+}

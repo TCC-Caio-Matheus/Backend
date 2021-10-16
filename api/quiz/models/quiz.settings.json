@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quizzes",
+  "info": {
+    "name": "quiz",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "score": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "stores": {
+      "collection": "store",
+      "via": "quizzes",
+      "dominant": true
+    },
+    "questions": {
+      "via": "quiz",
+      "collection": "question"
+    }
+  }
+}

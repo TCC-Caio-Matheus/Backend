@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stores",
+  "info": {
+    "name": "Store",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "stores"
+    },
+    "quizzes": {
+      "via": "stores",
+      "collection": "quiz"
+    },
+    "answers": {
+      "via": "store",
+      "collection": "answer"
+    }
+  }
+}

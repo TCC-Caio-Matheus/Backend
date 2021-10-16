@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "name": "question",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "MULTIPLE_CHOICE",
+        "SINGLE_CHOICE"
+      ]
+    },
+    "quiz": {
+      "via": "questions",
+      "model": "quiz"
+    },
+    "question_options": {
+      "collection": "question-option",
+      "via": "question"
+    },
+    "answers": {
+      "via": "question",
+      "collection": "answer"
+    }
+  }
+}
