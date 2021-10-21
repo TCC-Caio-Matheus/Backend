@@ -28,6 +28,9 @@
     "answers": {
       "via": "store",
       "collection": "answer"
+    },
+    "type": {
+      "type": "string"
     }
   }
 }

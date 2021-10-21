@@ -17,8 +17,8 @@
       "model": "question"
     },
     "store": {
-      "model": "store",
-      "via": "answers"
+      "via": "answers",
+      "model": "store"
     },
     "question_options": {
       "collection": "question-option"
