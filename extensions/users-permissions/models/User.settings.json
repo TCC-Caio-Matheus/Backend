@@ -66,6 +66,16 @@
     "evaluations": {
       "collection": "evaluation",
       "via": "user"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
