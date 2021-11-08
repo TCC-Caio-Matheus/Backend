@@ -64,8 +64,8 @@
       "collection": "store"
     },
     "evaluations": {
-      "collection": "evaluation",
-      "via": "user"
+      "via": "user",
+      "collection": "evaluation"
     },
     "avatar": {
       "model": "file",

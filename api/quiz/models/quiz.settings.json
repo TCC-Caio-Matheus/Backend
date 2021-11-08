@@ -29,6 +29,10 @@
     "questions": {
       "via": "quiz",
       "collection": "question"
+    },
+    "answers": {
+      "via": "quiz",
+      "collection": "answer"
     }
   }
 }

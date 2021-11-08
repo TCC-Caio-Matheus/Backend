@@ -27,6 +27,10 @@
       "collection": "suggestion",
       "via": "answers",
       "dominant": true
+    },
+    "quiz": {
+      "model": "quiz",
+      "via": "answers"
     }
   }
 }
