@@ -22,8 +22,8 @@
       "required": true
     },
     "stores": {
-      "collection": "store",
       "via": "quizzes",
+      "collection": "store",
       "dominant": true
     },
     "questions": {
